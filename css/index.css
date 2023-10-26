@@ -1,0 +1,26 @@
+body
+{
+    font-family: "SourceHanSansCN-Regular";
+    color: rgb(55,12,12);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    user-select: none;
+    background-color: rgba(230,230,250,1);
+}
+
+.container {
+    background-color: rgba(230,230,250,1);
+    height: 300vh;
+    width: 100vw;
+}
+
+.container .screen {
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ::-webkit-scrollbar {
+    display: none;
+} */
