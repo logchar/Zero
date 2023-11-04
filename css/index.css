@@ -1,7 +1,96 @@
+@font-face {
+    font-family: "ZCOOLXiaoWei";
+    src: url(../source/font/ZCOOLXiaoWei-Regular.ttf);
+}
+
+html {
+    font-size: 62.5%;
+    font-family: ZCOOLXiaoWei;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 1600px) {
+        font-size: 16px;
+    }
+    @media screen and (max-width: 1400px) {
+        font-size: 14px;
+    }
+    @media screen and (max-width: 1200px) {
+        font-size: 12px;
+    }
+    @media screen and (max-width: 900px) {
+        font-size: 8px;
+    }
+}
+
+@keyframes waves1 {
+    0% {
+        transform: scale(1) rotate3d(1,0.5,0,15deg);
+        opacity: 0;
+    }
+    16% {
+        transform: scale(1.5) rotate3d(1,1,0,50deg);
+        opacity: 0.75;
+    }
+    32% {
+        transform: scale(2) rotate3d(1,1.5,0,85deg);
+        opacity: 1;
+    }
+    48% {
+        transform: scale(1.5) rotate3d(1,2,120deg);
+        opacity: 0.75;
+    }
+    64% {
+        transform: scale(1) rotate3d(1,2.5,0,155deg);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1) rotate3d(1,2.5,0,155deg);
+        opacity: 0;
+    }
+}
+@keyframes waves2 {
+    0% {
+        transform: scale(1) rotate3d(-0.5,1,0,15deg);
+        opacity: 0;
+    }
+    36% {
+        transform: scale(1) rotate3d(-0.5,1,0,15deg);
+        opacity: 0;
+    }
+    52% {
+        transform: scale(1.5) rotate3d(-1,1,0,50deg);
+        opacity: 0.75;
+    }
+    68% {
+        transform: scale(2) rotate3d(-1.5,1,0,85deg);
+        opacity: 1;
+    }
+    84% {
+        transform: scale(1.5) rotate3d(-2,1,0,120deg);
+        opacity: 0.75;
+    }
+    100% {
+        transform: scale(1) rotate3d(-2.5,1,0,155deg);
+        opacity: 0;
+    }
+}
+@keyframes continue {
+    0% {
+        opacity: 0.75;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 0.75;
+    }
+}
+
 body
 {
     font-family: "SourceHanSansCN-Regular";
-    color: rgb(55,12,12);
+    color: rgb(55,12,12,0.5);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,8 +106,73 @@ body
 }
 
 .container .screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
+}
+
+.container .circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 19rem;
+    height: 19rem;
+    border-radius: 19rem;
+    box-shadow: 0.3rem 0.3rem 0.6rem rgb(172, 172, 197),
+        -0.2rem -0.2rem 0.5rem white;
+}
+
+#wave1{
+    width: 19rem;
+    height: 19rem;
+    border-radius: 19rem;
+    box-shadow: 1.0rem -0.3rem 0.6rem rgb(172, 172, 197),
+    -0.3rem -1.2rem 0.5rem white;
+    animation: waves1 8s linear infinite;
+    z-index: 100;
+    display: inline-block;
+    position: absolute;
+    justify-self: center;
+}
+#wave2{
+    width: 19rem;
+    height: 19rem;
+    border-radius: 19rem;
+    box-shadow: -0.3rem -1.2rem 0.5rem rgb(172, 172, 197),
+    -1.5rem -0.3rem 0.6rem white;
+    animation: waves2 8s linear infinite;
+    z-index: 100;
+    display: inline-block;
+    position: absolute;
+    justify-self: center;
+}
+#title1{
+    font-family: ZCOOLXiaoWei;
+    font-size: 5rem;
+    height: 5rem;
+    text-align: center;
+}
+#title2{
+    font-family: ZCOOLXiaoWei;
+    font-size: 4rem;
+    text-align: center;
+}
+#continue{
+    position: relative;
+    top: 7rem;
+    font-size: 1.5rem;
+    font-family: ZCOOLXiaoWei;
+    animation: continue 2s linear infinite;
+}
+
+@keyframes myfirst
+{
+    from {background: red;}
+    to {background: yellow;}
 }
 
 /* ::-webkit-scrollbar {
