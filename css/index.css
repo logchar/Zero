@@ -7,6 +7,9 @@ html {
     font-size: 62.5%;
     font-family: ZCOOLXiaoWei;
     box-sizing: border-box;
+    background-color: rgba(230,230,250,1);
+    color: rgb(55,12,12,0.5);
+    
 
     @media screen and (max-width: 1600px) {
         font-size: 16px;
@@ -86,25 +89,38 @@ html {
         opacity: 0.75;
     }
 }
+@keyframes typing {
+	from {
+		width: 0;
+	}
+	to {
+		width: 21em;
+	}
+}
+@keyframes bigger {
+    from {
+        font-size: 2rem;
+    }
+    to {
+        font-size: 2.2rem;
+        color: rgb(55,12,12,0.75);
+    }
+}
+
 
 body
 {
-    font-family: "SourceHanSansCN-Regular";
-    color: rgb(55,12,12,0.5);
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     white-space: nowrap;
     user-select: none;
-    background-color: rgba(230,230,250,1);
 }
 
 .container {
-    background-color: rgba(230,230,250,1);
     height: 400vh;
     width: 100vw;
 }
-
 .container .screen {
     display: flex;
     flex-direction: column;
@@ -126,7 +142,7 @@ body
         -0.2rem -0.2rem 0.5rem white;
 }
 
-#wave1{
+#wave1 {
     width: 19rem;
     height: 19rem;
     border-radius: 19rem;
@@ -138,7 +154,7 @@ body
     position: absolute;
     justify-self: center;
 }
-#wave2{
+#wave2 {
     width: 19rem;
     height: 19rem;
     border-radius: 19rem;
@@ -150,29 +166,58 @@ body
     position: absolute;
     justify-self: center;
 }
-#title1{
-    font-family: ZCOOLXiaoWei;
+#title1 {
     font-size: 5rem;
     height: 5rem;
     text-align: center;
 }
-#title2{
-    font-family: ZCOOLXiaoWei;
+#title2 {
     font-size: 4rem;
     text-align: center;
 }
-#continue{
+#continue {
     position: relative;
     top: 7rem;
     font-size: 1.5rem;
-    font-family: ZCOOLXiaoWei;
     animation: continue 2s linear infinite;
 }
+.typing {
+    text-align: center;
+	font-size: 1.5em;
+	width: 21em;
+	height: 1.5em;
+	animation: typing 2s steps(42, end) paused;
+	word-break: break-all;
+	overflow: hidden;
+}
 
-@keyframes myfirst
-{
-    from {background: red;}
-    to {background: yellow;}
+.container .waterfall {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-rows: repeat(14, 15rem);
+    grid-template-columns: repeat(5, 20%);
+    height: 322vh;
+    width: 100vw;
+}
+.water_item {
+    font-size: 2rem;
+    justify-self: center;
+    align-self: start;
+    break-inside: avoid;
+    text-align: center;
+    overflow: hidden;
+}
+.list {
+    list-style: none;
+}
+
+.images {
+    align-self: center;
+}
+
+li:hover {
+    animation: bigger 0.5s forwards;
 }
 
 /* ::-webkit-scrollbar {
