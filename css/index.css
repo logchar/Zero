@@ -195,9 +195,9 @@ body
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-rows: repeat(14, 15rem);
+    grid-template-rows: repeat(17, 15rem);
     grid-template-columns: repeat(5, 20%);
-    height: 322vh;
+    height: 350vh;
     width: 100vw;
 }
 .water_item {
