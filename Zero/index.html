@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>人格探索部</title>
+    <script src="javascript/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./javascript/index.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen" , id="s1">
+            <div class="circle">
+                <span id="wave1"></span>
+                <span id="wave2"></span>
+                <div id="title1">人格</div>
+                <div id="title2">探索部</div>
+            </div>
+            <div id="continue">
+                点 击 任 意 处 以 继 续
+            </div>
+        </div>
+        <div class="waterfall" , id="s2">
+            <div class="water_item" style="grid-area: 1/1/span 3/span 2;">
+                <ul class="list">
+                    <li>我是人格探索公司的一名"背后灵"</li>
+                    <li>今天，是我入职的第一天</li>
+                    <div id="hide" class="hide">
+                        <div class="hideContext">
+                            <span class="close">&times;</span>
+                            <li>人格探索公司致力于帮助每一个孩子找到自己对应的人格</li>
+                            <li>让他们在懵懂时期充分认识自我,认识世界</li>
+                            </br>
+                            <button class="btn2" id="clickButton2">基本介绍</button>
+                            <div id="basicInformation" style="display: none" ;>
+                                <li>MBTI是人格心理学中的一种测评方法，它通过对个体行为、偏好、态度等</li>
+                                <li>多个方面的评估，</li></br>
+                                <li>旨在帮助人们了解自己、表达自己、理解他人和调整行为。</li></br>
+                                <li>MBTI通过四个维度和倾向将人分成不同类型，主要四个方面进行考察</li></br>
+                                <li>第一，你从哪里获取动力？（精力支配）:外向Extraverted—内向Introverted</li></br>
+                                <li>第三，你如何做出决定？（判断事物）:思维Thinking—情感Feeling</li></br>
+                                <li>第四，你如何采取行动？（生活态度）:判断Judging—知觉Perceiving</li></br>
+                                <li> 其中两两组合，可以组合成16种人格类型。</li>
+                            </div>
+                            <button class=" btn2" id="clickButton3">测试网站</button>
+                            <div id="net" style="display: none;">
+                                <li> 93题版（职业）</li></br>
+
+                                <li>https://types.yuzeli.com/survey/type16</li></br>
+
+                                <li>16型人格官网版本（翻译问题准确性有待考量）</li></br>
+
+                                <li> https://www.16personalities.com/ch/</li></br>
+
+                                <li> 荣格八维测试题（比MBTI更准）</li></br>
+
+                                <li> https://types.yuzeli.com/survey/bigfive60</li></br>
+
+                                <li>荣格认知功能测试【专业版】 https://www.jungus.cn/zh-hans/test/</li></br>
+
+                                <li>MBTI官网</li></br>
+                                <li> https://www.myersbriggs.org/</li></br>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn" id="clickButton">基本信息都已经充分掌握了</button>
+                    <li>“打卡，上班”</li>
+                </ul>
+                <img src="./source/img/card.png" class="images">
+            </div>
+            <div class="water_item" style="grid-area: 2/3/span 2/span 3;">
+                <ul class="list">
+                    <li>“编号CH954，名字叫小雨，现在一岁半”</li>
+                    <li>视线从资料上移开，我看向婴儿床上的男孩</li>
+                    <li>——我的任务目标</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 4/2/span 2/span 3;">
+                <ul class="list">
+                    <li>“你好”</li>
+                    <li>“你好...啊？？？”</li>
+                    <li>嘶，听起来确实是小孩的声音，虽然一岁左右的小孩就已经能开口说话</li>
+                    <li>但一般来说也只能发出一些简单的音节，但是这位……你好？？？</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 5/1/span 2/span 3;">
+                <ul class="list">
+                    <li>小雨</li>
+                    <li>是个被知识诅咒的孩子</li>
+                    <li>他的聪慧程度与知识量</li>
+                    <li>从出生那一刻起</li>
+                    <li>便以远超同龄人的速度增长</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 6/3/span 2/span 3;">
+                <img src="./source/img/baby.png" class="images" style="opacity: 0.7;">
+            </div>
+            <div class="water_item" style="grid-area: 7/1/span 2/span 2;">
+                <ul class="list">
+                    <li>“笨蛋幽灵大哥哥，帮我倒杯水”</li>
+                    <li>“我说过很多遍了”</li>
+                    <li>“我的任务只是帮助你探索人格”</li>
+                    <li>“我不是保姆！而且！”</li>
+                    <li>“不要叫我笨蛋幽灵大哥哥！”</li>
+                    <li>嘴上抱怨着，给小雨倒了一杯水</li>
+                    <li>“好的，笨蛋幽灵”</li>
+                    <li>“没礼貌！”</li>
+                    <li>重重把水杯砸在这个四岁儿童前</li>
+                    <li>我看了看他手中的高数课本</li>
+                    <li>好吧，我是笨蛋</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 10/2/span 2/span 3;">
+                <ul class="list">
+                    <li>时间流逝着</li>
+                    <li>小雨以惊人的速度成长......</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 11/3/span 2/span 3;">
+                <ul class="list">
+                    <li>“大哥哥，你有没有听说过”</li>
+                    <li>“小孩可以看到大人看不到的东西”</li>
+                    <li>“啊？还真听说过，谁告诉你的。”</li>
+                    <li>我竟然从一向情绪稳定的小雨脸上看出一丝失落</li>
+                    <li>“我是不是要长大了。”</li>
+                    <li>“从今天早上开始……我看不见你了”</li>
+                    <li>......</li>
+                    <li>在大人面前将自己的聪慧天赋伪装起来</li>
+                    <li>身边孤儿院的小孩又太小太幼稚</li>
+                    <li>完全没有共同话题</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 11/2/span 2/span 2;">
+                <img src="./source/img/sad.png" class="images"
+                    style="opacity: 0.7;scale: 0.8;position: relative;right: 5rem;">
+            </div>
+            <div class="water_item" style="grid-area: 13/3/span 2/span 3;">
+                <ul class="list">
+                    <li>他又怎么能允许自己唯一朋友的离去</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 14/3/span 2/span 3;">
+                <ul class="list">
+                    <li>“大哥哥，可是”</li>
+                    <li>“我完全不知道自己的mbti人格是什么啊”</li>
+                    <li>“我也没做过那些乱七八糟的测试”</li>
+                    <li>“怎...怎么就说我了解我自己的人格了”</li>
+                    <li>“不一定是了解哦，事实上”</li>
+                    <li>“mbti人格测试出的结果与其说是实然上你的人格特征”</li>
+                    <li>“倒不如说是你想要拥有的人格特征”</li>
+                    <li>“只是你自己没有意识到而已”</li>
+                </ul>
+            </div>
+            <div class="water_item" style="grid-area: 16/2/span 2/span 3;">
+                <ul class="list">
+                    </br>
+                    <li>睁开眼，我又到了自己的工位上</li>
+                    <li>站起来踩了踩久违的坚实的地板</li>
+                    <li>“任务完成”</li>
+                </ul>
+            </div>
+        </div>
+        <div class="screen" , id="s3">
+
+        </div>
+    </div>
+</body>
